@@ -1,0 +1,80 @@
+.robot-hair-style {
+  animation: myspin 5s infinite;
+}
+
+@keyframes myspin {
+  50% {transform: rotate(360deg);}
+}
+
+.robot-nose {
+  animation: hellogoodbye 8s 3;
+}
+
+@keyframes hellogoodbye {
+  0% { opacity:0; } 
+	50% { opacity:1;}
+	100% { opacity:0; }
+}
+
+.robot-tooth {
+  animation: chomp 3s infinite;
+}
+
+@keyframes chomp {
+  50% {transform: scale(2.5);}
+}
+
+.robot-teeth:hover {
+  animation: bite 3s infinite;
+}
+
+@keyframes bite {
+  50% {transform: scale(1.5);}
+}
+
+.robot-ear-left {
+  animation: bounce 3s linear alternate infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.robot-eye-left {
+  animation: bouncey 3s linear alternate infinite;
+}
+
+@keyframes bouncey {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.robot-ear-right {
+  animation: moody 30s infinite alternate;
+}
+
+@keyframes moody {
+  15% {background-color: chartreuse; color: magenta;}
+  30% {background-color: blue; color:blueviolet;}
+  45% {background-color: aquamarine; color:coral;}
+  60% {background-color: tomato; color:greenyellow;}
+  75% {background-color: slateblue; color: darkcyan;}
+  90% {background-color: hotpink; color: slateblue;}
+}
+
+.robot-eye-right {
+  animation: halfspin 6s infinite;
+}
+
+@keyframes halfspin {
+  50% {transform: rotate(180deg);}
+}
